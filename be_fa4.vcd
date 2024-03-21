@@ -1,0 +1,180 @@
+$date
+	Thu Mar 21 11:31:46 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module be_fa4_tb $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " Co $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % Ci $end
+$var integer 32 & i [31:0] $end
+$scope module be_fa4_1 $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 % Ci $end
+$var wire 4 ) S [3:0] $end
+$var wire 1 " Co $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10
+b110 !
+b110 )
+b1 &
+1%
+b1 $
+b1 (
+b100 #
+b100 '
+#20
+1"
+b1 !
+b1 )
+b10 &
+b1101 $
+b1101 (
+b11 #
+b11 '
+#30
+0"
+b1000 !
+b1000 )
+b11 &
+b10 $
+b10 (
+b101 #
+b101 '
+#40
+b100 !
+b100 )
+1"
+b100 &
+b110 $
+b110 (
+b1101 #
+b1101 '
+#50
+b1010 !
+b1010 )
+b101 &
+b1100 $
+b1100 (
+#60
+0"
+b1011 !
+b1011 )
+b110 &
+0%
+b101 $
+b101 (
+b110 #
+b110 '
+#70
+b1100 !
+b1100 )
+b111 &
+b111 $
+b111 (
+b101 #
+b101 '
+#80
+b1 !
+b1 )
+1"
+b1000 &
+b10 $
+b10 (
+b1111 #
+b1111 '
+#90
+b1101 !
+b1101 )
+0"
+b1001 &
+b101 $
+b101 (
+b1000 #
+b1000 '
+#100
+b1011 !
+b1011 )
+1"
+b1010 &
+1%
+b1101 $
+b1101 (
+b1101 #
+b1101 '
+#110
+0"
+b1101 !
+b1101 )
+b1011 &
+0%
+b1010 $
+b1010 (
+b11 #
+b11 '
+#120
+b1011 !
+b1011 )
+b1100 &
+1%
+b0 #
+b0 '
+#130
+b1010 !
+b1010 )
+b1101 &
+b11 $
+b11 (
+b110 #
+b110 '
+#140
+b1111 !
+b1111 )
+b1110 &
+b1011 $
+b1011 (
+b11 #
+b11 '
+#150
+1"
+b1 !
+b1 )
+b1111 &
+b1110 $
+b1110 (
+b10 #
+b10 '
+#160
+b10 !
+b10 )
+b10000 &
+0%
+b11 $
+b11 (
+b1111 #
+b1111 '
+#170

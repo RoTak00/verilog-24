@@ -1,0 +1,60 @@
+$date
+	Thu Mar 21 11:24:50 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module be_fa_tb $end
+$var wire 1 ! S $end
+$var wire 1 " Co $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % Ci $end
+$scope module be_fa_1 $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % Ci $end
+$var wire 1 ! S $end
+$var wire 1 " Co $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1!
+1%
+#10
+0!
+1"
+1$
+#15
+1!
+0"
+0%
+#20
+0!
+1"
+1#
+#25
+1!
+1%
+#30
+0!
+0$
+#35
+1!
+0"
+0%

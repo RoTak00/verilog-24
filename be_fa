@@ -1,0 +1,85 @@
+#! /usr/local/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-498-g52d049b51)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x58c6b7b396c0 .scope module, "be_fa_tb" "be_fa_tb" 2 10;
+ .timescale 0 0;
+v0x58c6b7b4e070_0 .var "A", 0 0;
+v0x58c6b7b4e130_0 .var "B", 0 0;
+v0x58c6b7b4e200_0 .var "Ci", 0 0;
+v0x58c6b7b4e300_0 .net "Co", 0 0, L_0x58c6b7b4e470;  1 drivers
+v0x58c6b7b4e3d0_0 .net "S", 0 0, L_0x58c6b7b4e560;  1 drivers
+S_0x58c6b7b39850 .scope module, "be_fa_1" "be_fa" 2 33, 2 1 0, S_0x58c6b7b396c0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Co";
+    .port_info 1 /OUTPUT 1 "S";
+    .port_info 2 /INPUT 1 "A";
+    .port_info 3 /INPUT 1 "B";
+    .port_info 4 /INPUT 1 "Ci";
+v0x58c6b7b290e0_0 .net "A", 0 0, v0x58c6b7b4e070_0;  1 drivers
+v0x58c6b7b4d570_0 .net "B", 0 0, v0x58c6b7b4e130_0;  1 drivers
+v0x58c6b7b4d630_0 .net "Ci", 0 0, v0x58c6b7b4e200_0;  1 drivers
+v0x58c6b7b4d700_0 .net "Co", 0 0, L_0x58c6b7b4e470;  alias, 1 drivers
+v0x58c6b7b4d7c0_0 .net "S", 0 0, L_0x58c6b7b4e560;  alias, 1 drivers
+L_0x7ac84de9f060 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x58c6b7b4d8d0_0 .net *"_ivl_10", 0 0, L_0x7ac84de9f060;  1 drivers
+v0x58c6b7b4d9b0_0 .net *"_ivl_11", 1 0, L_0x58c6b7b4e950;  1 drivers
+v0x58c6b7b4da90_0 .net *"_ivl_13", 1 0, L_0x58c6b7b4ea90;  1 drivers
+L_0x7ac84de9f0a8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x58c6b7b4db70_0 .net *"_ivl_16", 0 0, L_0x7ac84de9f0a8;  1 drivers
+v0x58c6b7b4dc50_0 .net *"_ivl_17", 1 0, L_0x58c6b7b4ec10;  1 drivers
+v0x58c6b7b4dd30_0 .net *"_ivl_3", 1 0, L_0x58c6b7b4e6a0;  1 drivers
+L_0x7ac84de9f018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x58c6b7b4de10_0 .net *"_ivl_6", 0 0, L_0x7ac84de9f018;  1 drivers
+v0x58c6b7b4def0_0 .net *"_ivl_7", 1 0, L_0x58c6b7b4e7e0;  1 drivers
+L_0x58c6b7b4e470 .part L_0x58c6b7b4ec10, 1, 1;
+L_0x58c6b7b4e560 .part L_0x58c6b7b4ec10, 0, 1;
+L_0x58c6b7b4e6a0 .concat [ 1 1 0 0], v0x58c6b7b4e070_0, L_0x7ac84de9f018;
+L_0x58c6b7b4e7e0 .concat [ 1 1 0 0], v0x58c6b7b4e130_0, L_0x7ac84de9f060;
+L_0x58c6b7b4e950 .arith/sum 2, L_0x58c6b7b4e6a0, L_0x58c6b7b4e7e0;
+L_0x58c6b7b4ea90 .concat [ 1 1 0 0], v0x58c6b7b4e200_0, L_0x7ac84de9f0a8;
+L_0x58c6b7b4ec10 .arith/sum 2, L_0x58c6b7b4e950, L_0x58c6b7b4ea90;
+    .scope S_0x58c6b7b396c0;
+T_0 ;
+    %vpi_call 2 17 "$dumpfile", "be_fa" {0 0 0};
+    %vpi_call 2 18 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e070_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e130_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e200_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x58c6b7b4e200_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x58c6b7b4e130_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e200_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x58c6b7b4e070_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x58c6b7b4e200_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e130_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x58c6b7b4e200_0, 0, 1;
+    %vpi_call 2 30 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "be_fa.v";
